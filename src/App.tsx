@@ -1,15 +1,16 @@
 import React from 'react';
 import Button, { ButtonProps } from './components/button/button';
+import Alert, { AlertProps } from './components/alert/alert';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Button onClick={() => { alert("Hello") }}>Hello World</Button>
-        <Button btnType='danger' size='lg'>Hello World</Button>
-        <Button btnType='primary' size='sm'>Hello World</Button>
-        <Button btnType='link' href='https://www.baidu.com' disabled>Hello World</Button>
-        <Button btnType='link' href='https://www.baidu.com'>Hello World</Button>
+        <Button onClick={() => { alert("test") }}>Hello World</Button>
+        <Alert
+            onClose={function noRefCheck() { }}
+            title="this is alert!"
+          />
         <code>
           const a = 'b'
         </code>
