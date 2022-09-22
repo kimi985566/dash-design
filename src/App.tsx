@@ -8,9 +8,9 @@ function App() {
       <header className="App-header">
         <Button onClick={() => { alert("test") }}>Hello World</Button>
         <Alert
-            onClose={function noRefCheck() { }}
-            title="this is alert!"
-          />
+          onClose={function noRefCheck() { }}
+          title="this is alert!"
+        />
         <code>
           const a = 'b'
         </code>
