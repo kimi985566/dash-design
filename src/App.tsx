@@ -10,6 +10,8 @@ function App() {
         <Alert
           onClose={function noRefCheck() { }}
           title="this is alert!"
+          type='danger'
+          closable={true}
         />
         <code>
           const a = 'b'
