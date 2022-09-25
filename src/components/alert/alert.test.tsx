@@ -28,6 +28,7 @@ describe('test Alert Component', () => {
         const { getByText, queryByText, container } = render(<Alert {...testProps} />)
         expect(queryByText('title')).toBeInTheDocument()
         expect(container.querySelector('.dash-alert')).toHaveClass('dash-alert-default')
+        expect(queryByText('title')).toBeInTheDocument()
         fireEvent.click(getByText('times'))
         expect(testProps.onClose).toHaveBeenCalled()
         expect(queryByText('title')).not.toBeInTheDocument()
