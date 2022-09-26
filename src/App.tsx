@@ -1,6 +1,8 @@
 import React from 'react';
 import Button, { ButtonProps } from './components/button/button';
 import Alert, { AlertProps } from './components/alert/alert';
+import Menu from './components/menu/menu';
+import MenuItem from './components/menu/menuItem';
 
 function App() {
   return (
@@ -13,6 +15,11 @@ function App() {
           type='danger'
           closable={true}
         />
+        <Menu defaultIndex={'0'}>
+          <MenuItem>cool link1</MenuItem>
+          <MenuItem>cool link2</MenuItem>
+          <MenuItem>cool link3</MenuItem>
+        </Menu>
         <code>
           const a = 'b'
         </code>
