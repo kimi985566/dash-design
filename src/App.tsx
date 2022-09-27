@@ -15,7 +15,7 @@ function App() {
           type='danger'
           closable={true}
         />
-        <Menu defaultIndex={'0'} onSelect={(index) => { alert(index) }}>
+        <Menu mode={'vertical'} defaultIndex={'0'} onSelect={(index) => { alert(index) }}>
           <MenuItem index={'0'}>cool link1</MenuItem>
           <MenuItem index={'1'}>cool link2</MenuItem>
           <MenuItem index={'2'}>cool link3</MenuItem>
